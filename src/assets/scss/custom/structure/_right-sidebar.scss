@@ -1,0 +1,136 @@
+//
+// right-sidebar.scss
+//
+
+.side-menu.left-bar {
+    float: left !important;
+    left: 0;
+    right: -($leftbar-width + 10px);
+}
+
+.side-menu.right-bar {
+    float: right !important;
+    right: 0;
+}
+
+.side-menu {
+    // animation-direction: alternate;
+    // -webkit-animation: linear;
+    // -webkit-animation-duration: 5s;
+
+    background-color: $card-bg;
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.06), 0 1px 0 0 rgba(0, 0, 0, 0.02);
+    display: block;
+    position: fixed;
+    z-index: 9999;
+    top: 50px;
+    bottom: 0;
+    bottom: 0;
+    min-width: 200px;
+    max-width: 200px;
+    min-height: 90vh;
+    max-height: 100vh;
+    background-color: #fafafa;
+    transition: all 1.2s;
+    background: border-box white;
+    overflow-wrap: break-word;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+
+    .left-bar-toggle {
+        height: 24px;
+        width: 24px;
+        line-height: 24px;
+        color: #eff2f7;
+        text-align: center;
+        border-radius: 50%;
+    }
+    // .right-bar-toggle {
+    //     background-color: lighten($dark, 7%);
+    //     height: 24px;
+    //     width: 24px;
+    //     line-height: 24px;
+    //     color: $gray-200;
+    //     text-align: center;
+    //     border-radius: 50%;
+
+    //     &:hover {
+    //         background-color: lighten($dark, 10%);
+    //     }
+    // }
+}
+
+// Leftbar overlay
+.leftbar-overlay {
+    display: block;
+    position: fixed;
+    -webkit-transition: all 200ms ease-out;
+    transition: all 200ms ease-out;
+    float: left !important;
+    top: 50px;
+    bottom: 0;
+    z-index: 999;
+    background-color: rgba($dark, 0.55);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50px;
+    bottom: 0;
+}
+
+// Rightbar overlay
+.rightbar-overlay {
+    display: block;
+    position: fixed;
+    -webkit-transition: all 200ms ease-out;
+    transition: all 200ms ease-out;
+    float: right !important;
+    top: 50px;
+    bottom: 0;
+    z-index: 999;
+    background-color: rgba($dark, 0.55);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50px;
+    bottom: 0;
+}
+
+.right-bar-enabled {
+    .right-bar {
+        right: 0;
+    }
+    .rightbar-overlay {
+        display: block;
+    }
+}
+
+.left-bar-enabled {
+    .left-bar {
+        left: 0;
+    }
+    .leftbar-overlay {
+        display: block;
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .right-bar {
+        overflow: auto;
+        .slimscroll-menu {
+            height: auto !important;
+        }
+    }
+}
+
+@-webkit-keyframes run {
+    0% {
+        left: 0;
+    }
+    50% {
+        left: calc(100% - 100px);
+    }
+    100% {
+        left: 0;
+    }
+}

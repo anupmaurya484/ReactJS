@@ -1,0 +1,25 @@
+//
+// _card.scss
+//
+
+.card {
+  margin-bottom: $grid-gutter-width;
+  font-weight: 400;
+  border: 0;
+  box-shadow: 0 2px 5px 0 rgba(18,38,63,.16), 0 2px 10px 0 rgba(18,38,63,.16);
+}
+
+.card-drop {
+  color: $body-color;
+}
+
+.card-title {
+  font-size: 15px;
+  margin: 0 0 7px 0;
+  font-weight: $font-weight-semibold;
+}
+
+.card-title-desc {
+  color: $card-title-desc;
+  margin-bottom: 24px;
+}

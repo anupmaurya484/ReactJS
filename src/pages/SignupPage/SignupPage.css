@@ -1,0 +1,69 @@
+#SignupForm{
+    width: 30%;
+    border:1px solid;
+    margin-top: 50px !important;
+    margin: 15px 38px 0px auto;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    padding: 5px;
+    padding-top: 30px !important;
+    text-align: center
+}
+
+#SignupForm form{
+    margin-bottom: 50px;
+}
+
+#SignupForm form input{
+    border: 1px solid;
+    margin-top: 5px;
+    padding-left: 5px;
+}
+
+#SignupForm .row , #SignupForm .input-field{
+    margin-bottom : 0px;
+}
+#SignupForm form .submit-btn{
+width: 80%;
+/* background-color: rgb(241, 125, 129); */
+background-color: #26a69a;
+margin-left: 10px;
+}
+
+#SignupForm form .submit-btn[disabled] {
+    color: white !important;
+    /* background-color: rgb(235, 166, 168) !important; */
+    background-color: #59a8a0c7 !important;
+  }
+#SignupForm form label{
+    font-weight: bold;
+}
+
+#SignupForm .footer_login{
+    margin-bottom: 45px !important;
+    text-align: center
+}
+
+#SignupForm .title{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.sigup .container {
+    padding-top: 60px;
+}
+.sigup:before {
+	content: '';
+	position: fixed;
+	width: 100vw;
+    left: 0;
+    top: 50px;
+	height: 100vh;
+	background-image: url(https://source.unsplash.com/collection/30953102); 
+	/* background-image: url(https://www.teahub.io/photos/full/151-1516213_sharepoint-online.jpg); */
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: static;
+	-webkit-background-size: cover;
+	background-size: cover;
+}

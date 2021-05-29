@@ -1,0 +1,54 @@
+body {
+  background: #fff;
+}
+
+a.border.nav-link.border-light.rounded.mr-1 {
+  color: #3f729b;
+}
+
+a.border.nav-link.border-light.rounded.mr-1:hover {
+  color: #1c2331;
+}
+
+.btn.btn-sm.indigo:hover {
+  color: #fff;
+}
+
+.nav-link.active {
+  background-color: rgba(255, 255, 255, 0.918);
+}
+
+#categories > .col-md-4.mb-5 {
+  margin-bottom: 8rem !important;
+}
+.sectionPage {
+  position: relative;
+  top: -25px;
+  margin-bottom: -225px;
+}
+
+.sectionPage::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: url("https://mdbootstrap.com/wp-content/uploads/2016/12/big-bundle1.jpg");
+  background-position: center center;
+  background-size: cover;
+  filter: opacity(0.1);
+}
+
+.resource-panel {
+  background: rgba(255, 255, 255, 0.966);
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.alice-carousel .alice-carousel__wrapper {
+  padding-bottom: 20px !important;
+  padding-top: 8px !important;
+  padding-left: 8px !important;
+}
