@@ -1,0 +1,154 @@
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  /* background: #f3f2f2; */
+  background-image: url(../../assets/images/5.jpg);
+  position: relative;
+}
+
+.loginpage .mainCard {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 2px 2px 2px 2px #888888;
+  width: 800px;
+  height: 500px;
+}
+
+.loginpage .textpart {
+  background-image: url(../../assets/images/4.jpg);
+}
+
+.loginpage .textpart .description h6,
+h3,
+p {
+  color: white;
+}
+
+.loginpage .formpart {
+  background-color: #e4e6e7;
+}
+
+
+
+.heading button {
+  background-color: white;
+  color: #007bff;
+  border: none;
+  font-weight:500;
+  font-size: 11px;
+  padding: 10px 13px;
+  border-radius: 5px;
+ 
+}
+
+.heading{
+  justify-content: center;
+  align-items: center;
+}
+
+.log-in {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.log-in .login-button button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  font-size: 11px;
+  font-weight: 500;
+  padding: 10px 35px;
+  border-radius: 5px;
+}
+
+.avatar-sm {
+  height: 2rem;
+  width: 2rem;
+}
+
+.avatar-title {
+  align-items: center;
+  /* background-color: #2851A3; */
+  color: white;
+  display: flex;
+  font-weight: bold;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.fa-google {
+  background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
+.log-in .user-box {
+  position: relative;
+}
+
+.log-in .user-box input {
+  width: 120%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #007bff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #007bff;
+  outline: none;
+  background: transparent;
+}
+.log-in .user-box label {
+  position: absolute;
+  top:0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.log-in .user-box input:focus ~ label,
+.log-in .user-box input:valid ~ label {
+  
+  left: -10%;
+  color: #007bff;
+  font-size: 12px;
+}
+
+.textpart{
+  position: relative;
+}
+
+.description p {
+  text-indent: 70px;
+}
+
+.description h3 {
+  text-indent: -2em
+}
+
+.description .onlytext{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.left-head{
+  align-items: center;
+}
